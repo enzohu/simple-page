@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+}
+ul,ol {
+    list-style: none;
+    padding: 0;
+}
+/*logo模块*/
+.logo {
+    text-align: center;
+}
+.logo > .img {
+    display:inline-block;
+    background:#d8d8d8;
+    width:72px;
+    height:72px;
+    border-radius:50%;
+    margin-top:50px; 
+
+}
+.logo > .slogan {
+    margin-top: 28px;
+}
+.logo > .slogan > li {
+    background:#d8d8d8;
+    display: inline-block; 
+    min-width: 128px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 24px;
+    line-height: 24px;
+  
+}
+
+/*banner模块*/
+.banner {
+    background:#efefef;
+    text-align: center;
+    padding-top: 46px;
+}
+.banner  h2 {
+    background:#d8d8d8;
+    border-radius:14px;
+    display: inline-block;
+    min-width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 34px;
+    padding: 3px 0;
+    
+}
+.banner .one-line-header {
+    display: none;
+}
+.banner .one-line-header {
+    padding-left: 2.75em;
+    padding-right: 2.75em;
+}
+@media (min-width:500px) {
+    .banner .two-lines-header {
+        display: none;
+    }
+    .banner .one-line-header {
+        display: block;
+    }
+
+}
+.banner .details {
+    margin-top: 16px;
+    padding-bottom: 50px;
+}
+.banner .details p{
+    background:#e8e7e7;
+    border-radius:14px;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 24px;
+    margin-top: 20px;
+
+}
+@media (min-width:500px) {
+  .banner .details p {
+    max-width: none;
+    margin-left: 52px;
+    margin-right: 52px;
+  }
+}
+
+/*products模块*/
+.products {
+    margin: 0 16px;
+}
+.products >ol {
+    margin-top: 42px;
+}
+@media (min-width: 500px) {
+    .products > ol {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+     .products > ol > li {
+        width: calc(50% - 16px);
+        box-sizing: border-box;
+  }
+}
+@media (min-width: 1000px) {
+    .products > ol > li {
+        width: calc(33.333333% - 21.333333px);
+    }
+}
+@media (min-width: 1200px){
+  .products > ol {
+    max-width: 928px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.products>ol>li{}
+.products.product{}
+.products .product> .img {
+    background:#d8d8d8;
+    border-radius:4px;
+    height: 188px;
+    
+}
+.products .product > h3 {
+    background:#bcbcbc;
+    border-radius:4px;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-bottom: 14px;
+    max-width: 204px;
+}
+.products.product>p {
+    background:#ececec;
+    border-radius:4px;
+    line-height: 16px;
+    font-size: 14px;
+    margin-top: 14px;
+}
